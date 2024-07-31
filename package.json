@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "anshul",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
